@@ -10,7 +10,7 @@
 }
 
 .header-inner {
-  min-height: 72px;
+  min-height: 106px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -23,6 +23,17 @@
   gap: 10px;
   color: var(--ink);
   text-decoration: none;
+}
+
+.brand-logo-link {
+  flex: 0 0 auto;
+}
+
+.brand-logo {
+  width: clamp(185px, 20vw, 245px);
+  height: auto;
+  object-fit: contain;
+  object-position: left center;
 }
 
 .brand-mark {
@@ -593,6 +604,14 @@ address {
   color: var(--paper);
 }
 
+.footer-logo {
+  width: min(230px, 70vw);
+  height: auto;
+  border: 1px solid rgba(217, 201, 163, 0.7);
+  border-radius: var(--radius);
+  background: var(--paper);
+}
+
 .footer-brand .brand-by,
 .footer-inner p {
   color: rgba(255, 249, 237, 0.76);
@@ -633,23 +652,6 @@ address {
 
 .home-copy .lead {
   max-width: 720px;
-}
-
-.hero-showcase {
-  display: grid;
-  gap: 16px;
-  padding: 16px;
-  border: 1px solid rgba(217, 201, 163, 0.82);
-  border-radius: var(--radius);
-  background: rgba(255, 249, 237, 0.58);
-  box-shadow: var(--shadow);
-}
-
-.hero-logo-lockup {
-  width: 100%;
-  border: 1px solid rgba(217, 201, 163, 0.68);
-  border-radius: var(--radius);
-  background: var(--paper);
 }
 
 .home-art-grid {
@@ -743,7 +745,7 @@ address {
 
   .site-nav {
     position: absolute;
-    inset: 72px 16px auto;
+    inset: 106px 16px auto;
     display: none;
     flex-direction: column;
     align-items: stretch;
@@ -803,11 +805,16 @@ address {
   }
 
   .header-inner {
-    min-height: 66px;
+    min-height: 92px;
   }
 
   .site-nav {
-    inset: 66px 12px auto;
+    inset: 92px 12px auto;
+  }
+
+  .brand-logo {
+    width: min(174px, 56vw);
+    height: auto;
   }
 
   .brand-mark {
