@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" role="img" aria-labelledby="title desc">
+  <title id="title">Kala Nidhi by Rajeev Verma logo</title>
+  <desc id="desc">Mandala seal, symbolic portrait, chai cup, and Kala Nidhi wordmark.</desc>
+  <rect width="760" height="420" fill="#FFF9ED"/>
+  <g transform="translate(42 36)">
+    <circle cx="164" cy="164" r="150" fill="#FFF9ED" stroke="#B07A2A" stroke-width="3"/>
+    <circle cx="164" cy="164" r="126" fill="none" stroke="#2E2A27" stroke-width="2"/>
+    <circle cx="164" cy="164" r="116" fill="none" stroke="#D9C9A3" stroke-width="2" stroke-dasharray="2 8"/>
+    <g fill="none" stroke="#B07A2A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M164 6c8 22 21 31 44 29-5 23 2 38 22 49-21 9-29 24-24 47-23-4-39 4-48 24-10-20-26-28-49-24 5-23-3-38-24-47 20-11 27-26 22-49 23 2 37-7 57-29Z"/>
+      <path d="M164 6c8 22 21 31 44 29-5 23 2 38 22 49-21 9-29 24-24 47-23-4-39 4-48 24-10-20-26-28-49-24 5-23-3-38-24-47 20-11 27-26 22-49 23 2 37-7 57-29Z" transform="rotate(45 164 164)"/>
+    </g>
+    <g fill="none" stroke="#2E2A27" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M109 152c3-44 29-72 63-72 31 0 58 24 58 62 0 59-49 86-91 71-23-8-34-28-30-61Z"/>
+      <path d="M115 151c19-23 56-35 91-15M126 149c5-6 15-6 21 0m36 0c6-6 16-6 22 0M142 169c16 10 31 10 47 0M151 183c11 6 25 6 36 0M118 204c21 31 77 33 106 2M102 230c39 31 91 32 127 0M83 245c30 19 125 20 160-1"/>
+      <path d="M79 211h38c8 0 15 7 15 15v13c0 11-9 20-20 20H91c-11 0-20-9-20-20v-20c0-4 4-8 8-8Z"/>
+      <path d="M132 225h18c10 0 16 8 13 17-2 8-10 13-20 12M212 98c16-12 29-16 43-17"/>
+    </g>
+    <path d="M244 76c-5 17-2 28 12 40" fill="none" stroke="#B07A2A" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(360 114)">
+    <path d="M55 2c9 22 25 31 48 24-12 19-11 35 4 52-21-5-37 1-49 20-9-20-23-29-45-27 16-15 20-30 12-51 18 12 35 8 30-18Z" fill="none" stroke="#B07A2A" stroke-width="5" stroke-linejoin="round"/>
+    <text x="0" y="142" font-family="'Noto Serif Devanagari', 'Nirmala UI', Georgia, serif" font-size="82" fill="#2E2A27">कला<tspan fill="#B07A2A">Nidhi</tspan></text>
+    <line x1="8" y1="174" x2="104" y2="174" stroke="#B07A2A" stroke-width="2"/>
+    <text x="120" y="188" font-family="Georgia, 'Times New Roman', serif" font-size="38" fill="#2E2A27">by Rajeev Verma</text>
+    <line x1="424" y1="174" x2="516" y2="174" stroke="#B07A2A" stroke-width="2"/>
+    <text x="0" y="246" font-family="Georgia, 'Times New Roman', serif" font-size="24" letter-spacing="7" fill="#B07A2A">ART • STORIES • HEALING</text>
+  </g>
+</svg>
