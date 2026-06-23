@@ -11,13 +11,13 @@ body::before {
   content: "";
   position: fixed;
   top: 84px;
-  right: max(-170px, calc((100vw - var(--max-width)) / 2 - 300px));
+  right: max(-150px, calc((100vw - var(--max-width)) / 2 - 260px));
   z-index: 0;
-  width: min(58vw, 760px);
+  width: min(54vw, 700px);
   aspect-ratio: 1;
-  background: url("/assets/img/home-mandala-hero.jpg") center / contain no-repeat;
+  background: url("/assets/img/mandala-cutout.png") center / contain no-repeat;
   filter: grayscale(1) contrast(1.08);
-  opacity: 0.16;
+  opacity: 0.1;
   transform: translateZ(0);
   pointer-events: none;
 }
@@ -775,40 +775,47 @@ address {
 .home-hero {
   position: relative;
   overflow: hidden;
-  min-height: 0;
+  min-height: clamp(580px, 72vh, 760px);
   display: grid;
   align-items: center;
-  padding-block: clamp(54px, 7.4vw, 94px);
+  padding-block: clamp(74px, 8vw, 118px);
   isolation: isolate;
   perspective: 1200px;
   background:
-    radial-gradient(circle at 75% 30%, rgba(20, 16, 13, 0.08), transparent 28rem),
-    linear-gradient(90deg, rgba(250, 246, 238, 0.99) 0%, rgba(250, 246, 238, 0.97) 48%, rgba(250, 246, 238, 0.7) 74%, rgba(250, 246, 238, 0.42) 100%),
-    var(--paper);
-  border-bottom: 1px solid rgba(41, 36, 31, 0.1);
+    radial-gradient(ellipse at 72% 58%, rgba(250, 246, 238, 0.16), transparent 24rem),
+    radial-gradient(ellipse at 48% 105%, rgba(154, 113, 57, 0.16), transparent 42rem),
+    linear-gradient(180deg, #070605 0%, var(--lux-black) 62%, #0b0907 100%);
+  color: var(--paper);
+  border-bottom: 1px solid rgba(250, 246, 238, 0.12);
 }
 
 .home-hero::before {
   content: "";
   position: absolute;
-  inset: 28px max(16px, calc((100vw - var(--max-width)) / 2)) auto;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(41, 36, 31, 0.2), transparent);
-  z-index: 2;
+  left: 50%;
+  bottom: -16%;
+  z-index: 0;
+  width: min(68vw, 980px);
+  aspect-ratio: 1 / 0.36;
+  background: radial-gradient(ellipse, rgba(250, 246, 238, 0.16), transparent 68%);
+  transform: translateX(-8%);
+  filter: blur(10px);
+  opacity: 0.85;
+  pointer-events: none;
 }
 
 .home-hero::after {
   content: "";
   position: absolute;
-  top: -9%;
-  right: -4vw;
+  right: max(-70px, calc((100vw - var(--max-width)) / 2 - 170px));
+  bottom: -18%;
   z-index: 0;
-  width: min(60vw, 800px);
-  height: 124%;
-  background: url("/assets/img/home-mandala-hero.jpg") center / contain no-repeat;
-  filter: grayscale(1) contrast(1.06);
-  opacity: 0.58;
-  transform: perspective(1200px) rotateY(-7deg) rotateX(2deg) translate3d(0, 0, 0);
+  width: min(58vw, 860px);
+  aspect-ratio: 1;
+  background: url("/assets/img/mandala-cutout.png") center / contain no-repeat;
+  filter: invert(1) grayscale(1) contrast(1.12) brightness(1.24);
+  opacity: 0.48;
+  transform: perspective(1200px) rotateY(-10deg) rotateX(3deg) translate3d(0, 0, 0);
   transform-origin: 58% center;
   will-change: transform;
   pointer-events: none;
@@ -821,14 +828,39 @@ address {
 }
 
 .home-copy h1 {
-  max-width: 560px;
-  color: var(--ink);
-  line-height: 1.1;
+  max-width: 650px;
+  color: var(--paper);
+  font-size: clamp(2.35rem, 4vw, 4rem);
+  line-height: 1.04;
 }
 
 .home-copy .lead {
   max-width: 560px;
-  color: rgba(46, 42, 39, 0.78);
+  color: rgba(250, 246, 238, 0.72);
+  font-size: 1.05rem;
+}
+
+.home-copy .eyebrow {
+  color: rgba(213, 216, 201, 0.92);
+}
+
+.home-hero .button {
+  border-color: var(--paper);
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.home-hero .button-secondary {
+  border-color: rgba(250, 246, 238, 0.22);
+  background: rgba(250, 246, 238, 0.05);
+  color: var(--paper);
+}
+
+.home-hero .button:hover,
+.home-hero .button-secondary:hover {
+  border-color: rgba(250, 246, 238, 0.78);
+  background: rgba(250, 246, 238, 0.14);
+  color: var(--paper);
 }
 
 .media-preview {
@@ -1056,10 +1088,20 @@ address {
   position: relative;
   overflow: hidden;
   background:
-    linear-gradient(90deg, rgba(20, 16, 13, 0.92), rgba(20, 16, 13, 0.86)),
-    url("/assets/img/home-mandala-paper.jpg") center / cover no-repeat,
+    radial-gradient(circle at 16% 58%, rgba(250, 246, 238, 0.05), transparent 20rem),
+    radial-gradient(circle at 88% 18%, rgba(40, 87, 94, 0.08), transparent 24rem),
+    linear-gradient(90deg, rgba(20, 16, 13, 0.97), rgba(20, 16, 13, 0.9)),
     var(--lux-black);
   color: var(--paper);
+}
+
+.home-intro::before {
+  content: none;
+}
+
+.home-intro > .wrap {
+  position: relative;
+  z-index: 1;
 }
 
 .home-intro .text-stack,
@@ -1131,7 +1173,7 @@ address {
   bottom: -36%;
   width: min(44vw, 560px);
   aspect-ratio: 1;
-  background: url("/assets/img/home-mandala-hero.jpg") center / contain no-repeat;
+  background: url("/assets/img/mandala-cutout.png") center / contain no-repeat;
   filter: grayscale(1) contrast(1.1);
   opacity: 0.1;
   pointer-events: none;
@@ -1215,11 +1257,11 @@ address {
 
 @keyframes mandalaDrift {
   from {
-    transform: perspective(1200px) rotateY(-8deg) rotateX(2deg) translate3d(0, 0, 0) scale(1);
+    transform: perspective(1200px) rotateY(-11deg) rotateX(3deg) translate3d(0, 0, 0) scale(1);
   }
 
   to {
-    transform: perspective(1200px) rotateY(-3deg) rotateX(-1deg) translate3d(-18px, 8px, 0) scale(1.025);
+    transform: perspective(1200px) rotateY(-6deg) rotateX(0deg) translate3d(-18px, 10px, 0) scale(1.025);
   }
 }
 
@@ -1351,25 +1393,33 @@ address {
   }
 
   .home-hero {
-    min-height: 0;
+    min-height: 660px;
     align-items: start;
-    padding-block: 54px 42px;
+    padding-block: 66px 54px;
     background:
-      linear-gradient(180deg, rgba(250, 246, 238, 0.99) 0%, rgba(250, 246, 238, 0.95) 58%, rgba(250, 246, 238, 0.86) 100%),
-      var(--paper);
+      radial-gradient(ellipse at 86% 74%, rgba(250, 246, 238, 0.13), transparent 16rem),
+      radial-gradient(ellipse at 34% 105%, rgba(154, 113, 57, 0.16), transparent 24rem),
+      linear-gradient(180deg, #070605 0%, var(--lux-black) 72%, #0b0907 100%);
   }
 
   .home-hero::after {
-    top: -6%;
-    right: -42%;
-    width: 112vw;
-    height: 94%;
-    opacity: 0.32;
+    top: auto;
+    right: -82vw;
+    bottom: -22%;
+    width: 178vw;
+    opacity: 0.26;
+  }
+
+  .home-hero::before {
+    left: 28%;
+    bottom: 2%;
+    width: 120vw;
+    opacity: 0.42;
   }
 
   .page-hero h1,
   .home-copy h1 {
-    font-size: 1.95rem;
+    font-size: 2.35rem;
   }
 
   .hero {
