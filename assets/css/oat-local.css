@@ -1,15 +1,15 @@
 :root {
-  --cream: #F4EFE3;
-  --paper: #FFF9ED;
-  --ink: #2E2A27;
-  --muted-ink: #655E55;
-  --antique-gold: #B07A2A;
-  --sage: #8A9A6B;
-  --soft-sage: #C8CFB6;
-  --deep-teal: #2F5F67;
-  --border: #D9C9A3;
+  --cream: #F3EFE6;
+  --paper: #FBF7EF;
+  --ink: #29241F;
+  --muted-ink: #625C54;
+  --antique-gold: #8F6934;
+  --sage: #7F8C68;
+  --soft-sage: #D5D8C9;
+  --deep-teal: #28575E;
+  --border: #D8D0BF;
   --white: #ffffff;
-  --shadow: 0 24px 70px rgba(46, 42, 39, 0.11);
+  --shadow: 0 18px 54px rgba(41, 36, 31, 0.08);
   --radius: 8px;
   --max-width: 1120px;
   --display-devanagari: "Noto Serif Devanagari", "Nirmala UI", "Kohinoor Devanagari", serif;
@@ -78,9 +78,9 @@ button {
 
 .section-tint {
   background:
-    linear-gradient(0deg, rgba(255, 249, 237, 0.74), rgba(255, 249, 237, 0.74)),
+    linear-gradient(0deg, rgba(251, 247, 239, 0.58), rgba(251, 247, 239, 0.58)),
     var(--cream);
-  border-block: 1px solid rgba(217, 201, 163, 0.58);
+  border-block: 1px solid rgba(41, 36, 31, 0.1);
 }
 
 .button {
@@ -95,20 +95,20 @@ button {
   color: var(--paper);
   font-weight: 700;
   text-decoration: none;
-  box-shadow: inset 0 0 0 1px rgba(176, 122, 42, 0.24);
+  box-shadow: none;
   transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease, box-shadow 160ms ease;
 }
 
 .button-secondary {
-  background: rgba(255, 249, 237, 0.62);
-  border-color: rgba(176, 122, 42, 0.48);
+  background: rgba(251, 247, 239, 0.76);
+  border-color: rgba(41, 36, 31, 0.18);
   color: var(--ink);
   box-shadow: none;
 }
 
 .button-secondary:hover {
   background: var(--paper);
-  border-color: var(--antique-gold);
+  border-color: var(--deep-teal);
   color: var(--ink);
   box-shadow: none;
 }
@@ -116,7 +116,7 @@ button {
 .button:hover {
   background: var(--deep-teal);
   border-color: var(--deep-teal);
-  box-shadow: inset 0 0 0 1px rgba(255, 249, 237, 0.24);
+  box-shadow: none;
 }
 
 .button-ghost {
@@ -136,7 +136,7 @@ button {
   color: var(--ink);
   border-color: transparent;
   text-decoration: underline;
-  text-decoration-color: var(--antique-gold);
+  text-decoration-color: rgba(40, 87, 94, 0.45);
   text-underline-offset: 5px;
 }
 
