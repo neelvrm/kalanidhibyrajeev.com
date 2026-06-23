@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
-  <title id="title">Kala Nidhi by Rajeev Verma</title>
-  <desc id="desc">Cream paper social preview with mandala seal and Kala Nidhi wordmark.</desc>
+  <title id="title">कलाnidhi by Rajeev Verma</title>
+  <desc id="desc">Cream paper social preview with mandala seal and कलाnidhi wordmark.</desc>
   <rect width="1200" height="630" fill="#F4EFE3"/>
   <rect x="54" y="54" width="1092" height="522" rx="18" fill="#FFF9ED" stroke="#D9C9A3" stroke-width="3"/>
   <g transform="translate(112 105)">
@@ -11,7 +11,7 @@
     <path d="M164 196c22-25 66-39 108-16M178 196c7-7 18-7 25 0m45 0c7-7 19-7 27 0M199 223c20 11 39 11 58 0M168 283c45 34 109 35 151 1" fill="none" stroke="#2E2A27" stroke-width="6" stroke-linecap="round"/>
   </g>
   <g transform="translate(500 205)">
-    <text x="0" y="92" font-family="'Noto Serif Devanagari', 'Nirmala UI', Georgia, serif" font-size="118" fill="#2E2A27">कला<tspan fill="#B07A2A">Nidhi</tspan></text>
+    <text x="0" y="92" font-family="'Noto Serif Devanagari', 'Nirmala UI', Georgia, serif" font-size="118" fill="#2E2A27">कला<tspan fill="#B07A2A">nidhi</tspan></text>
     <text x="8" y="170" font-family="Georgia, 'Times New Roman', serif" font-size="50" fill="#2E2A27">by Rajeev Verma</text>
     <text x="8" y="238" font-family="Georgia, 'Times New Roman', serif" font-size="34" letter-spacing="10" fill="#B07A2A">ART • STORIES • HEALING</text>
   </g>

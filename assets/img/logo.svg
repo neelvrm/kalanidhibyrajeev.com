@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" role="img" aria-labelledby="title desc">
-  <title id="title">Kala Nidhi by Rajeev Verma logo</title>
-  <desc id="desc">Mandala seal, symbolic portrait, chai cup, and Kala Nidhi wordmark.</desc>
+  <title id="title">कलाnidhi by Rajeev Verma logo</title>
+  <desc id="desc">Mandala seal, symbolic portrait, chai cup, and कलाnidhi wordmark.</desc>
   <rect width="760" height="420" fill="#FFF9ED"/>
   <g transform="translate(42 36)">
     <circle cx="164" cy="164" r="150" fill="#FFF9ED" stroke="#B07A2A" stroke-width="3"/>
@@ -20,7 +20,7 @@
   </g>
   <g transform="translate(360 114)">
     <path d="M55 2c9 22 25 31 48 24-12 19-11 35 4 52-21-5-37 1-49 20-9-20-23-29-45-27 16-15 20-30 12-51 18 12 35 8 30-18Z" fill="none" stroke="#B07A2A" stroke-width="5" stroke-linejoin="round"/>
-    <text x="0" y="142" font-family="'Noto Serif Devanagari', 'Nirmala UI', Georgia, serif" font-size="82" fill="#2E2A27">कला<tspan fill="#B07A2A">Nidhi</tspan></text>
+    <text x="0" y="142" font-family="'Noto Serif Devanagari', 'Nirmala UI', Georgia, serif" font-size="82" fill="#2E2A27">कला<tspan fill="#B07A2A">nidhi</tspan></text>
     <line x1="8" y1="174" x2="104" y2="174" stroke="#B07A2A" stroke-width="2"/>
     <text x="120" y="188" font-family="Georgia, 'Times New Roman', serif" font-size="38" fill="#2E2A27">by Rajeev Verma</text>
     <line x1="424" y1="174" x2="516" y2="174" stroke="#B07A2A" stroke-width="2"/>

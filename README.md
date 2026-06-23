@@ -1,4 +1,4 @@
-# Kala Nidhi by Rajeev Verma
+# कलाnidhi by Rajeev Verma
 
 Static MVP website for `kalanidhibyrajeev.com`.
 
