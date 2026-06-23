@@ -1,18 +1,42 @@
 body {
+  position: relative;
   background:
-    radial-gradient(circle at 84% 10%, rgba(40, 87, 94, 0.055), transparent 28rem),
+    radial-gradient(circle at 82% 10%, rgba(20, 16, 13, 0.06), transparent 28rem),
     var(--cream);
   color: var(--ink);
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 84px;
+  right: max(-170px, calc((100vw - var(--max-width)) / 2 - 300px));
+  z-index: 0;
+  width: min(58vw, 760px);
+  aspect-ratio: 1;
+  background: url("/assets/img/home-mandala-hero.jpg") center / contain no-repeat;
+  filter: grayscale(1) contrast(1.08);
+  opacity: 0.16;
+  transform: translateZ(0);
+  pointer-events: none;
+}
+
+.site-header,
+main,
+.site-footer {
+  position: relative;
+  z-index: 1;
 }
 
 .site-header {
   position: sticky;
   top: 0;
   z-index: 20;
-  background: rgba(251, 247, 239, 0.96);
-  border-top: 4px solid #3b2d1d;
-  border-bottom: 1px solid rgba(41, 36, 31, 0.11);
-  box-shadow: 0 12px 36px rgba(41, 36, 31, 0.045);
+  background: rgba(20, 16, 13, 0.95);
+  border-top: 4px solid #342617;
+  border-bottom: 1px solid rgba(250, 246, 238, 0.12);
+  box-shadow: 0 12px 36px rgba(20, 16, 13, 0.16);
   backdrop-filter: blur(16px);
 }
 
@@ -28,7 +52,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  color: var(--ink);
+  color: var(--paper);
   text-decoration: none;
 }
 
@@ -38,14 +62,14 @@ body {
 }
 
 .brand-seal {
-  width: 36px;
-  height: 36px;
-  border: 1px solid rgba(41, 36, 31, 0.16);
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(250, 246, 238, 0.18);
   border-radius: 50%;
   flex: 0 0 auto;
   object-fit: cover;
   background: var(--paper);
-  box-shadow: 0 8px 22px rgba(41, 36, 31, 0.05);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.24);
 }
 
 .brand-text {
@@ -63,7 +87,7 @@ body {
 
 .brand-by {
   display: block;
-  color: var(--muted-ink);
+  color: rgba(250, 246, 238, 0.64);
   font-family: var(--display);
   font-size: 0.72rem;
   line-height: 1.15;
@@ -73,7 +97,7 @@ body {
   display: flex;
   align-items: center;
   gap: 15px;
-  color: rgba(41, 36, 31, 0.72);
+  color: rgba(250, 246, 238, 0.7);
   font-size: 0.9rem;
   font-weight: 650;
 }
@@ -83,22 +107,22 @@ body {
 }
 
 .site-nav a:not(.button):hover {
-  color: var(--deep-teal);
+  color: var(--paper);
 }
 
 .site-nav a[aria-current="page"] {
-  color: var(--ink);
+  color: var(--paper);
   text-decoration: underline;
-  text-decoration-color: var(--deep-teal);
+  text-decoration-color: var(--antique-gold);
   text-underline-offset: 6px;
 }
 
 .site-nav .button-small {
   min-height: 36px;
   padding: 7px 14px;
-  border-color: rgba(41, 36, 31, 0.92);
-  background: var(--ink);
-  color: var(--paper);
+  border-color: rgba(250, 246, 238, 0.8);
+  background: var(--paper);
+  color: var(--ink);
   font-family: var(--body);
   font-size: inherit;
   font-weight: inherit;
@@ -109,9 +133,9 @@ body {
   display: none;
   width: 44px;
   height: 44px;
-  border: 1px solid rgba(41, 36, 31, 0.16);
+  border: 1px solid rgba(250, 246, 238, 0.2);
   border-radius: var(--radius);
-  background: rgba(251, 247, 239, 0.84);
+  background: rgba(250, 246, 238, 0.08);
 }
 
 .nav-toggle span:not(.sr-only) {
@@ -119,14 +143,14 @@ body {
   width: 18px;
   height: 2px;
   margin: 5px auto;
-  background: var(--ink);
+  background: var(--paper);
 }
 
 .hero {
   display: grid;
   align-items: center;
   padding-block: 54px 72px;
-  background: var(--paper);
+  background: rgba(250, 246, 238, 0.86);
   border-bottom: 1px solid rgba(41, 36, 31, 0.1);
 }
 
@@ -153,6 +177,16 @@ body {
   font-weight: 800;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+.section-tint .eyebrow,
+.section-tint .card-kicker {
+  color: rgba(213, 216, 201, 0.9);
+}
+
+.section-tint h2,
+.section-tint h3 {
+  color: var(--paper);
 }
 
 h1,
@@ -345,10 +379,25 @@ h3 {
 .art-card,
 .book-card,
 .workshop-card {
-  border: 1px solid rgba(41, 36, 31, 0.12);
+  border: 1px solid rgba(34, 28, 23, 0.12);
   border-radius: var(--radius);
-  background: rgba(251, 247, 239, 0.78);
-  box-shadow: 0 10px 30px rgba(41, 36, 31, 0.035);
+  background: rgba(250, 246, 238, 0.86);
+  box-shadow: 0 10px 30px rgba(34, 28, 23, 0.035);
+}
+
+.section-tint .mini-card,
+.section-tint .art-card,
+.section-tint .workshop-card {
+  border-color: var(--lux-line);
+  background: rgba(250, 246, 238, 0.055);
+  box-shadow: none;
+}
+
+.section-tint .mini-card p,
+.section-tint .card-body p,
+.section-tint .workshop-card p,
+.section-tint .weekly-plan p {
+  color: var(--lux-muted);
 }
 
 .event-details div {
@@ -444,6 +493,10 @@ h3 {
   gap: 18px;
 }
 
+.book-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .gallery-grid {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
@@ -481,7 +534,7 @@ h3 {
 }
 
 .art-image img,
-.book-cover img {
+.art-image img {
   width: 100%;
   height: 100%;
   min-height: inherit;
@@ -528,11 +581,46 @@ h3 {
 
 .book-card {
   display: grid;
-  grid-template-columns: 120px 1fr;
+  grid-template-columns: 168px minmax(0, 1fr);
+  min-height: 270px;
+  background: var(--paper);
 }
 
 .book-cover {
-  min-height: 100%;
+  min-height: 270px;
+  padding: 16px;
+  background:
+    radial-gradient(circle at 50% 18%, rgba(154, 113, 57, 0.14), transparent 9rem),
+    var(--lux-black);
+}
+
+.book-cover img {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  max-height: 238px;
+  object-fit: contain;
+  filter: drop-shadow(0 18px 18px rgba(0, 0, 0, 0.25));
+}
+
+.section-tint .book-card {
+  border-color: rgba(250, 246, 238, 0.14);
+  background: rgba(250, 246, 238, 0.96);
+  box-shadow: none;
+}
+
+.section-tint .book-card h3 {
+  color: var(--ink);
+}
+
+.section-tint .book-card .card-kicker,
+.section-tint .book-card .card-body p {
+  color: var(--muted-ink);
+}
+
+.section-tint .book-card .text-link {
+  color: var(--deep-teal);
+  text-decoration-color: rgba(40, 87, 94, 0.42);
 }
 
 .text-link {
@@ -556,7 +644,7 @@ h3 {
   padding: 16px;
   border: 1px solid rgba(40, 87, 94, 0.18);
   border-radius: var(--radius);
-  background: rgba(213, 216, 201, 0.22);
+  background: rgba(213, 216, 201, 0.18);
 }
 
 .hours-panel p {
@@ -581,17 +669,13 @@ address {
   font-size: 1.08rem;
 }
 
-.contact-actions {
-  justify-content: flex-end;
-}
-
 .site-footer {
-  padding-block: 22px;
-  border-top: 1px solid rgba(41, 36, 31, 0.12);
+  padding-block: 30px;
+  border-top: 1px solid rgba(250, 246, 238, 0.12);
   background:
-    linear-gradient(180deg, rgba(251, 247, 239, 0.98), rgba(243, 239, 230, 0.98)),
-    var(--cream);
-  color: var(--ink);
+    radial-gradient(circle at 78% 35%, rgba(154, 113, 57, 0.16), transparent 22rem),
+    linear-gradient(180deg, var(--lux-panel), var(--lux-black));
+  color: var(--paper);
 }
 
 .footer-inner {
@@ -608,7 +692,7 @@ address {
 
 .footer-title {
   width: max-content;
-  color: var(--ink);
+  color: var(--paper);
   font-family: var(--display);
   font-size: 1rem;
   text-decoration: none;
@@ -616,12 +700,12 @@ address {
 
 .footer-title:hover,
 .footer-actions a:hover {
-  color: var(--deep-teal);
+  color: var(--paper);
 }
 
 .footer-inner p {
   margin: 0;
-  color: var(--muted-ink);
+  color: var(--lux-muted);
 }
 
 .footer-actions {
@@ -646,19 +730,19 @@ address {
   height: 38px;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(41, 36, 31, 0.15);
+  border: 1px solid rgba(250, 246, 238, 0.16);
   border-radius: 50%;
-  background: rgba(251, 247, 239, 0.78);
-  color: var(--ink);
+  background: rgba(250, 246, 238, 0.06);
+  color: var(--paper);
   text-decoration: none;
   transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease;
 }
 
 .social-icon-link:hover,
 .social-icon-link:focus-visible {
-  border-color: var(--deep-teal);
-  background: var(--deep-teal);
-  color: var(--paper);
+  border-color: rgba(250, 246, 238, 0.72);
+  background: var(--paper);
+  color: var(--ink);
 }
 
 .social-icon-link svg {
@@ -695,9 +779,11 @@ address {
   display: grid;
   align-items: center;
   padding-block: clamp(54px, 7.4vw, 94px);
+  isolation: isolate;
+  perspective: 1200px;
   background:
-    linear-gradient(90deg, rgba(251, 247, 239, 0.99) 0%, rgba(251, 247, 239, 0.96) 44%, rgba(251, 247, 239, 0.56) 74%, rgba(251, 247, 239, 0.24) 100%),
-    url("/assets/img/home-mandala-hero.jpg") right center / auto 118% no-repeat,
+    radial-gradient(circle at 75% 30%, rgba(20, 16, 13, 0.08), transparent 28rem),
+    linear-gradient(90deg, rgba(250, 246, 238, 0.99) 0%, rgba(250, 246, 238, 0.97) 48%, rgba(250, 246, 238, 0.7) 74%, rgba(250, 246, 238, 0.42) 100%),
     var(--paper);
   border-bottom: 1px solid rgba(41, 36, 31, 0.1);
 }
@@ -708,10 +794,30 @@ address {
   inset: 28px max(16px, calc((100vw - var(--max-width)) / 2)) auto;
   height: 1px;
   background: linear-gradient(90deg, transparent, rgba(41, 36, 31, 0.2), transparent);
+  z-index: 2;
+}
+
+.home-hero::after {
+  content: "";
+  position: absolute;
+  top: -9%;
+  right: -4vw;
+  z-index: 0;
+  width: min(60vw, 800px);
+  height: 124%;
+  background: url("/assets/img/home-mandala-hero.jpg") center / contain no-repeat;
+  filter: grayscale(1) contrast(1.06);
+  opacity: 0.58;
+  transform: perspective(1200px) rotateY(-7deg) rotateX(2deg) translate3d(0, 0, 0);
+  transform-origin: 58% center;
+  will-change: transform;
+  pointer-events: none;
 }
 
 .home-hero-grid {
   display: block;
+  position: relative;
+  z-index: 1;
 }
 
 .home-copy h1 {
@@ -726,8 +832,26 @@ address {
 }
 
 .media-preview {
-  background: var(--paper);
-  border-top: 1px solid rgba(41, 36, 31, 0.1);
+  background:
+    radial-gradient(circle at 20% 15%, rgba(154, 113, 57, 0.12), transparent 22rem),
+    var(--lux-black);
+  color: var(--paper);
+  border-top: 1px solid rgba(250, 246, 238, 0.1);
+}
+
+.media-preview .text-link,
+.section-tint .text-link {
+  color: var(--paper);
+  text-decoration-color: rgba(250, 246, 238, 0.42);
+}
+
+.media-preview .eyebrow {
+  color: rgba(213, 216, 201, 0.9);
+}
+
+.section-tint .book-card .text-link {
+  color: var(--deep-teal);
+  text-decoration-color: rgba(40, 87, 94, 0.42);
 }
 
 .media-strip,
@@ -872,7 +996,7 @@ address {
   padding: 16px;
   border: 1px solid rgba(41, 36, 31, 0.12);
   border-radius: var(--radius);
-  background: rgba(251, 247, 239, 0.78);
+  background: rgba(250, 246, 238, 0.9);
 }
 
 .weekly-plan span {
@@ -932,9 +1056,20 @@ address {
   position: relative;
   overflow: hidden;
   background:
-    linear-gradient(90deg, rgba(243, 239, 230, 0.94), rgba(243, 239, 230, 0.9)),
+    linear-gradient(90deg, rgba(20, 16, 13, 0.92), rgba(20, 16, 13, 0.86)),
     url("/assets/img/home-mandala-paper.jpg") center / cover no-repeat,
-    var(--cream);
+    var(--lux-black);
+  color: var(--paper);
+}
+
+.home-intro .text-stack,
+.home-intro .text-stack p {
+  color: var(--lux-muted);
+}
+
+.home-intro .text-link {
+  color: var(--paper);
+  text-decoration-color: rgba(250, 246, 238, 0.48);
 }
 
 .split-rule {
@@ -965,7 +1100,7 @@ address {
 
 .page-hero {
   padding-block: 46px 38px;
-  background: var(--paper);
+  background: rgba(250, 246, 238, 0.84);
 }
 
 .page-hero h1 {
@@ -982,6 +1117,110 @@ address {
   font-family: var(--display);
   font-size: 1.55rem;
   font-weight: 500;
+}
+
+.about-main .page-hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.about-main .page-hero::after {
+  content: "";
+  position: absolute;
+  right: -9%;
+  bottom: -36%;
+  width: min(44vw, 560px);
+  aspect-ratio: 1;
+  background: url("/assets/img/home-mandala-hero.jpg") center / contain no-repeat;
+  filter: grayscale(1) contrast(1.1);
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.about-title {
+  position: relative;
+  z-index: 1;
+}
+
+.about-portrait {
+  max-width: 280px;
+  margin: 28px 0 0;
+  padding: 10px;
+  border: 1px solid rgba(34, 28, 23, 0.16);
+  border-radius: var(--radius);
+  background: var(--lux-black);
+  box-shadow: var(--shadow);
+}
+
+.about-portrait img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: 8% center;
+  border-radius: calc(var(--radius) - 2px);
+}
+
+.about-portrait figcaption {
+  margin-top: 10px;
+  color: var(--lux-muted);
+  font-size: 0.9rem;
+}
+
+.visit-card {
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.72fr);
+  gap: 0;
+  align-items: stretch;
+  overflow: hidden;
+  padding: 0;
+  background: var(--paper);
+}
+
+.visit-card > div:first-child {
+  padding: clamp(30px, 4.8vw, 52px);
+}
+
+.visit-card .contact-actions {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: center;
+  justify-content: stretch;
+  gap: 12px;
+  padding: clamp(30px, 4vw, 46px);
+  background:
+    radial-gradient(circle at 80% 20%, rgba(154, 113, 57, 0.18), transparent 14rem),
+    var(--lux-black);
+}
+
+.visit-card .contact-actions .button {
+  width: 100%;
+}
+
+.visit-card .button-ghost {
+  background: rgba(250, 246, 238, 0.06);
+  border-color: var(--lux-line);
+  color: var(--paper);
+}
+
+.visit-card .button-link {
+  border-color: transparent;
+  color: var(--paper);
+  text-decoration-color: rgba(250, 246, 238, 0.5);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .home-hero::after {
+    animation: mandalaDrift 18s ease-in-out infinite alternate;
+  }
+}
+
+@keyframes mandalaDrift {
+  from {
+    transform: perspective(1200px) rotateY(-8deg) rotateX(2deg) translate3d(0, 0, 0) scale(1);
+  }
+
+  to {
+    transform: perspective(1200px) rotateY(-3deg) rotateX(-1deg) translate3d(-18px, 8px, 0) scale(1.025);
+  }
 }
 
 @media (max-width: 1100px) {
@@ -1002,11 +1241,11 @@ address {
     flex-direction: column;
     align-items: stretch;
     padding: 16px;
-    border: 1px solid var(--border);
+    border: 1px solid var(--lux-line);
     border-radius: var(--radius);
-    background: var(--paper);
-    box-shadow: var(--shadow);
-    color: var(--muted-ink);
+    background: var(--lux-panel);
+    box-shadow: 0 22px 60px rgba(0, 0, 0, 0.24);
+    color: rgba(250, 246, 238, 0.78);
   }
 
   .site-nav.is-open {
@@ -1058,6 +1297,13 @@ address {
 }
 
 @media (max-width: 640px) {
+  body::before {
+    top: 84px;
+    right: -58vw;
+    width: 124vw;
+    opacity: 0.1;
+  }
+
   .wrap {
     width: min(100% - 24px, var(--max-width));
   }
@@ -1075,8 +1321,8 @@ address {
   }
 
   .brand-seal {
-    width: 34px;
-    height: 34px;
+    width: 36px;
+    height: 36px;
   }
 
   .brand-name {
@@ -1109,9 +1355,16 @@ address {
     align-items: start;
     padding-block: 54px 42px;
     background:
-      linear-gradient(180deg, rgba(251, 247, 239, 0.98) 0%, rgba(251, 247, 239, 0.94) 54%, rgba(251, 247, 239, 0.72) 100%),
-      url("/assets/img/home-mandala-hero.jpg") 61% top / auto 100% no-repeat,
+      linear-gradient(180deg, rgba(250, 246, 238, 0.99) 0%, rgba(250, 246, 238, 0.95) 58%, rgba(250, 246, 238, 0.86) 100%),
       var(--paper);
+  }
+
+  .home-hero::after {
+    top: -6%;
+    right: -42%;
+    width: 112vw;
+    height: 94%;
+    opacity: 0.32;
   }
 
   .page-hero h1,
@@ -1158,6 +1411,19 @@ address {
 
   .book-cover {
     min-height: 220px;
+  }
+
+  .book-cover img {
+    max-height: 190px;
+  }
+
+  .visit-card > div:first-child,
+  .visit-card .contact-actions {
+    padding: 24px;
+  }
+
+  .about-portrait {
+    max-width: none;
   }
 
   .footer-inner {

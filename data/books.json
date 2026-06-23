@@ -5,7 +5,7 @@
     "author": "Rajeev Verma",
     "description": "Spiritual writing by Rajeev Verma.",
     "link": "https://www.amazon.in/Faith-Philosophy-Hinduism-Rajeev-Verma/dp/8178357186",
-    "cover": "https://m.media-amazon.com/images/I/21Wb4Drcn2L._ML2_.jpg",
+    "cover": "assets/books/faith-and-philosophy-of-hinduism.jpg",
     "alt": "Faith and Philosophy of Hinduism by Rajeev Verma"
   },
   {
@@ -14,7 +14,7 @@
     "author": "Rajeev Verma",
     "description": "A tribute to every father by Rajeev Verma.",
     "link": "https://www.amazon.in/Nikhil-Publishers-Distributors-Dad-Hardcover/dp/B0H4ZF1LQR",
-    "cover": "https://m.media-amazon.com/images/I/51-9Qw3jeCL._SL1500_.jpg",
+    "cover": "assets/books/dad-a-tribute-to-every-father.jpg",
     "alt": "DAD: A Tribute to Every Father by Rajeev Verma"
   },
   {
@@ -23,7 +23,7 @@
     "author": "Rajeev Verma",
     "description": "Strategic campaign management by Rajeev Verma.",
     "link": "https://www.amazon.in/Advanced-Digital-marketing-Management-Effectiveness-ebook/dp/B0H257BT8Y",
-    "cover": "https://m.media-amazon.com/images/I/612JBhri4HL._SX342_SY445_QL70_ML2_.jpg",
+    "cover": "assets/books/advanced-digital-marketing.jpg",
     "alt": "Advanced Digital Marketing by Rajeev Verma"
   },
   {
@@ -32,7 +32,7 @@
     "author": "Rajeev Verma",
     "description": "Poetry by Rajeev Verma.",
     "link": "https://www.amazon.in/Wings-Grace-Poetry-Rajeev-Verma/dp/B0GZBYRD5T",
-    "cover": "https://m.media-amazon.com/images/I/516xeIwJt9L._SL1500_.jpg",
+    "cover": "assets/books/wings-of-grace.jpg",
     "alt": "Wings Of Grace by Rajeev Verma"
   },
   {
@@ -41,7 +41,7 @@
     "author": "Rajeev Verma",
     "description": "Poetry by Rajeev Verma.",
     "link": "https://www.amazon.in/Nazakat-Ke-Pankh-Rajeev-Verma/dp/B0GZBWTRH6",
-    "cover": "https://m.media-amazon.com/images/I/51PoqX8K+eL._SL1500_.jpg",
+    "cover": "assets/books/nazakat-ke-pankh.jpg",
     "alt": "Nazakat Ke Pankh by Rajeev Verma"
   },
   {
@@ -50,7 +50,7 @@
     "author": "Rajeev Verma",
     "description": "Hindi writing by Rajeev Verma.",
     "link": "https://www.amazon.in/Sakaaraatmak-Rajeev-Verma-Nikhil-Publishers/dp/B0GXFLZLJ6",
-    "cover": "https://m.media-amazon.com/images/I/417XaHSDKoL._SY445_SX342_ML2_.jpg",
+    "cover": "assets/books/sakaaraatmak-urja.jpg",
     "alt": "Sakaaraatmak Urja by Rajeev Verma"
   },
   {
@@ -59,7 +59,7 @@
     "author": "Rajeev Verma",
     "description": "A book by Rajeev Verma.",
     "link": "https://www.amazon.in/Trange-Rajeev-Verma/dp/B0GXDZWSTC",
-    "cover": "https://m.media-amazon.com/images/I/61Qyr3GiLRL._SL1045_.jpg",
+    "cover": "assets/books/trange.jpg",
     "alt": "Trange by Rajeev Verma"
   },
   {
@@ -68,7 +68,7 @@
     "author": "Rajeev Verma",
     "description": "Education and career guidance by Rajeev Verma.",
     "link": "https://www.amazon.in/Getting-Business-School-Correct-Stream/dp/B0GTMJM2X9",
-    "cover": "https://m.media-amazon.com/images/I/71eEba5ySyL._SL1179_.jpg",
+    "cover": "assets/books/getting-into-business-school-with-correct-stream.jpg",
     "alt": "Getting Into Business School With Correct Stream by Rajeev Verma"
   },
   {
@@ -77,7 +77,7 @@
     "author": "Rajeev Verma",
     "description": "Short Stories for Youth by Rajeev Verma.",
     "link": "https://www.amazon.in/Chose-Smile-Short-Stories-Rajeev/dp/B0GTMJ237N",
-    "cover": "https://m.media-amazon.com/images/I/71xow8kNFuL._SL1230_.jpg",
+    "cover": "assets/books/the-man-who-chose-to-smile.jpg",
     "alt": "The Man Who Chose To Smile by Rajeev Verma"
   },
   {
@@ -86,7 +86,7 @@
     "author": "Rajeev Verma",
     "description": "Poetry by Rajeev Verma.",
     "link": "https://www.amazon.in/My-Selected-Poems-Rajeev-Verma/dp/B0GTMHLZK2",
-    "cover": "https://m.media-amazon.com/images/I/61brL0rCG-L._SL1154_.jpg",
+    "cover": "assets/books/my-selected-poems.jpg",
     "alt": "My Selected Poems by Rajeev Verma"
   },
   {
@@ -95,7 +95,7 @@
     "author": "Rajeev Verma",
     "description": "A book by Rajeev Verma.",
     "link": "https://www.amazon.in/Good-Vibes-Rajeev-Verma/dp/B0GTM9HMJH",
-    "cover": "https://m.media-amazon.com/images/I/618kPT-WUcL._SL1151_.jpg",
+    "cover": "assets/books/good-vibes.jpg",
     "alt": "Good Vibes by Rajeev Verma"
   }
 ]
