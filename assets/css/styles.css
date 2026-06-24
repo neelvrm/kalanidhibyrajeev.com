@@ -73,12 +73,12 @@ main,
 .brand-seal {
   width: 40px;
   height: 40px;
-  border: 1px solid rgba(250, 246, 238, 0.18);
+  border: 1px solid rgba(176, 122, 42, 0.28);
   border-radius: 50%;
   flex: 0 0 auto;
   object-fit: cover;
   background: var(--paper);
-  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 8px 20px rgba(36, 30, 24, 0.12);
 }
 
 .brand-text {
@@ -92,11 +92,12 @@ main,
   font-size: 1.02rem;
   line-height: 1;
   letter-spacing: 0;
+  color: var(--ink);
 }
 
 .brand-by {
   display: block;
-  color: rgba(250, 246, 238, 0.64);
+  color: var(--muted-ink);
   font-family: var(--display);
   font-size: 0.72rem;
   line-height: 1.15;
