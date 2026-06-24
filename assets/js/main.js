@@ -1,5 +1,5 @@
 const phone = "917302239440";
-const visitMessage = "Namaste, I would like to know more about कलाnidhi by Rajeev Verma.";
+const visitMessage = "Namaste, I would like to know more about कलाNidhi by Rajeev Verma.";
 
 const wa = (message) => `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 const rootPath = (path) => {
@@ -35,7 +35,7 @@ const makePlaceholder = (label, className = "placeholder-art") =>
 
 function imageBlock(item, type = "art") {
   const src = item.image || item.cover;
-  const label = item.category || item.title || "कलाnidhi";
+  const label = item.category || item.title || "कलाNidhi";
   const holder = type === "book" ? "book-cover placeholder-cover" : "art-image placeholder-art";
   if (!src) return `<div class="${holder}"><span>${label}</span></div>`;
   const wrapClass = type === "book" ? "book-cover" : "art-image";
@@ -43,7 +43,7 @@ function imageBlock(item, type = "art") {
 }
 
 function artworkCard(item) {
-  const message = `Namaste, I am interested in ${item.title} at कलाnidhi. Please share details.`;
+  const message = `Namaste, I am interested in ${item.title} at कलाNidhi. Please share details.`;
   return `<article class="art-card" data-category="${item.category}">
     ${imageBlock(item)}
     <div class="card-body">
@@ -73,7 +73,7 @@ function bookCard(item) {
 }
 
 function workshopCard(item) {
-  const message = `Namaste, I am interested in ${item.title} at कलाnidhi. Please share details.`;
+  const message = `Namaste, I am interested in ${item.title} at कलाNidhi. Please share details.`;
   return `<article class="workshop-card">
     <p class="card-kicker">${item.duration}</p>
     <h3>${item.title}</h3>

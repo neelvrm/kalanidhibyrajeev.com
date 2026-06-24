@@ -1,18 +1,18 @@
 :root {
-  --cream: #EEE8DC;
-  --paper: #FAF6EE;
-  --ink: #221C17;
-  --muted-ink: #615A51;
-  --antique-gold: #9A7139;
-  --sage: #7F8C68;
-  --soft-sage: #D5D8C9;
-  --deep-teal: #28575E;
-  --border: #D4C8B5;
-  --lux-black: #14100D;
-  --lux-panel: #1D1712;
-  --lux-panel-soft: #251E18;
-  --lux-line: rgba(250, 246, 238, 0.14);
-  --lux-muted: rgba(250, 246, 238, 0.66);
+  --cream: #F4EFE3;
+  --paper: #FFF9ED;
+  --ink: #2E2A27;
+  --muted-ink: #655E55;
+  --antique-gold: #B07A2A;
+  --sage: #8A9A6B;
+  --soft-sage: #C8CFB6;
+  --deep-teal: #2F5F67;
+  --border: #D9C9A3;
+  --lux-black: #1F1914;
+  --lux-panel: #2A211A;
+  --lux-panel-soft: #34291F;
+  --lux-line: rgba(36, 30, 24, 0.12);
+  --lux-muted: rgba(36, 30, 24, 0.62);
   --white: #ffffff;
   --shadow: 0 18px 54px rgba(34, 28, 23, 0.08);
   --radius: 8px;
@@ -83,10 +83,10 @@ button {
 
 .section-tint {
   background:
-    radial-gradient(circle at 85% 8%, rgba(154, 113, 57, 0.16), transparent 26rem),
-    linear-gradient(180deg, var(--lux-black), var(--lux-panel));
-  color: var(--paper);
-  border-block: 1px solid rgba(34, 28, 23, 0.58);
+    radial-gradient(circle at 88% 4%, rgba(176, 122, 42, 0.1), transparent 26rem),
+    linear-gradient(180deg, rgba(255, 249, 237, 0.82), rgba(244, 239, 227, 0.92));
+  color: var(--ink);
+  border-block: 1px solid rgba(36, 30, 24, 0.08);
 }
 
 .button {

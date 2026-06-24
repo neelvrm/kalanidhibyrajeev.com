@@ -1,7 +1,7 @@
 body {
   position: relative;
   background:
-    radial-gradient(circle at 82% 10%, rgba(20, 16, 13, 0.06), transparent 28rem),
+    radial-gradient(circle at 82% 10%, rgba(176, 122, 42, 0.1), transparent 28rem),
     var(--cream);
   color: var(--ink);
   overflow-x: hidden;
@@ -17,7 +17,7 @@ body::before {
   aspect-ratio: 1;
   background: url("/assets/img/mandala-cutout.png") center / contain no-repeat;
   filter: grayscale(1) contrast(1.08);
-  opacity: 0.1;
+  opacity: 0.055;
   transform: translateZ(0);
   pointer-events: none;
 }
@@ -33,15 +33,15 @@ main,
   position: sticky;
   top: 0;
   z-index: 20;
-  background: rgba(20, 16, 13, 0.95);
-  border-top: 4px solid #342617;
-  border-bottom: 1px solid rgba(250, 246, 238, 0.12);
-  box-shadow: 0 12px 36px rgba(20, 16, 13, 0.16);
-  backdrop-filter: blur(16px);
+  background: rgba(255, 249, 237, 0.95);
+  border-top: 4px solid var(--lux-black);
+  border-bottom: 1px solid rgba(36, 30, 24, 0.12);
+  box-shadow: 0 10px 32px rgba(36, 30, 24, 0.08);
+  backdrop-filter: blur(18px);
 }
 
 .header-inner {
-  min-height: 62px;
+  min-height: 84px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -52,13 +52,22 @@ main,
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  color: var(--paper);
+  color: var(--ink);
   text-decoration: none;
 }
 
 .brand-wordmark {
-  gap: 9px;
   align-items: center;
+}
+
+.brand-logo {
+  width: auto;
+  height: clamp(64px, 5vw, 78px);
+  object-fit: contain;
+  border: 1px solid rgba(176, 122, 42, 0.22);
+  border-radius: 4px;
+  background: var(--paper);
+  box-shadow: 0 10px 28px rgba(46, 42, 39, 0.08);
 }
 
 .brand-seal {
@@ -97,7 +106,7 @@ main,
   display: flex;
   align-items: center;
   gap: 15px;
-  color: rgba(250, 246, 238, 0.7);
+  color: rgba(36, 30, 24, 0.68);
   font-size: 0.9rem;
   font-weight: 650;
 }
@@ -107,11 +116,11 @@ main,
 }
 
 .site-nav a:not(.button):hover {
-  color: var(--paper);
+  color: var(--ink);
 }
 
 .site-nav a[aria-current="page"] {
-  color: var(--paper);
+  color: var(--ink);
   text-decoration: underline;
   text-decoration-color: var(--antique-gold);
   text-underline-offset: 6px;
@@ -120,9 +129,9 @@ main,
 .site-nav .button-small {
   min-height: 36px;
   padding: 7px 14px;
-  border-color: rgba(250, 246, 238, 0.8);
-  background: var(--paper);
-  color: var(--ink);
+  border-color: var(--lux-black);
+  background: var(--lux-black);
+  color: var(--paper);
   font-family: var(--body);
   font-size: inherit;
   font-weight: inherit;
@@ -133,9 +142,9 @@ main,
   display: none;
   width: 44px;
   height: 44px;
-  border: 1px solid rgba(250, 246, 238, 0.2);
+  border: 1px solid rgba(36, 30, 24, 0.2);
   border-radius: var(--radius);
-  background: rgba(250, 246, 238, 0.08);
+  background: rgba(36, 30, 24, 0.04);
 }
 
 .nav-toggle span:not(.sr-only) {
@@ -143,7 +152,7 @@ main,
   width: 18px;
   height: 2px;
   margin: 5px auto;
-  background: var(--paper);
+  background: var(--ink);
 }
 
 .hero {
@@ -181,12 +190,12 @@ main,
 
 .section-tint .eyebrow,
 .section-tint .card-kicker {
-  color: rgba(213, 216, 201, 0.9);
+  color: var(--deep-teal);
 }
 
 .section-tint h2,
 .section-tint h3 {
-  color: var(--paper);
+  color: var(--ink);
 }
 
 h1,
@@ -379,25 +388,25 @@ h3 {
 .art-card,
 .book-card,
 .workshop-card {
-  border: 1px solid rgba(34, 28, 23, 0.12);
+  border: 1px solid rgba(36, 30, 24, 0.12);
   border-radius: var(--radius);
-  background: rgba(250, 246, 238, 0.86);
-  box-shadow: 0 10px 30px rgba(34, 28, 23, 0.035);
+  background: rgba(255, 249, 239, 0.82);
+  box-shadow: 0 12px 34px rgba(36, 30, 24, 0.04);
 }
 
 .section-tint .mini-card,
 .section-tint .art-card,
 .section-tint .workshop-card {
-  border-color: var(--lux-line);
-  background: rgba(250, 246, 238, 0.055);
-  box-shadow: none;
+  border-color: rgba(36, 30, 24, 0.1);
+  background: rgba(255, 249, 239, 0.78);
+  box-shadow: 0 12px 34px rgba(36, 30, 24, 0.035);
 }
 
 .section-tint .mini-card p,
 .section-tint .card-body p,
 .section-tint .workshop-card p,
 .section-tint .weekly-plan p {
-  color: var(--lux-muted);
+  color: var(--muted-ink);
 }
 
 .event-details div {
@@ -604,9 +613,9 @@ h3 {
 }
 
 .section-tint .book-card {
-  border-color: rgba(250, 246, 238, 0.14);
-  background: rgba(250, 246, 238, 0.96);
-  box-shadow: none;
+  border-color: rgba(36, 30, 24, 0.1);
+  background: rgba(255, 249, 239, 0.9);
+  box-shadow: 0 12px 34px rgba(36, 30, 24, 0.035);
 }
 
 .section-tint .book-card h3 {
@@ -670,12 +679,12 @@ address {
 }
 
 .site-footer {
-  padding-block: 30px;
-  border-top: 1px solid rgba(250, 246, 238, 0.12);
+  padding-block: 34px;
+  border-top: 1px solid rgba(36, 30, 24, 0.12);
   background:
-    radial-gradient(circle at 78% 35%, rgba(154, 113, 57, 0.16), transparent 22rem),
-    linear-gradient(180deg, var(--lux-panel), var(--lux-black));
-  color: var(--paper);
+    radial-gradient(circle at 78% 35%, rgba(176, 122, 42, 0.1), transparent 22rem),
+    linear-gradient(180deg, rgba(255, 249, 239, 0.94), rgba(243, 238, 228, 0.9));
+  color: var(--ink);
 }
 
 .footer-inner {
@@ -692,20 +701,33 @@ address {
 
 .footer-title {
   width: max-content;
-  color: var(--paper);
+  color: var(--ink);
   font-family: var(--display);
   font-size: 1rem;
   text-decoration: none;
 }
 
+.footer-logo-link {
+  display: inline-flex;
+}
+
+.footer-logo {
+  width: min(210px, 58vw);
+  height: auto;
+  object-fit: contain;
+  border: 1px solid rgba(176, 122, 42, 0.22);
+  border-radius: 4px;
+  background: var(--paper);
+}
+
 .footer-title:hover,
 .footer-actions a:hover {
-  color: var(--paper);
+  color: var(--ink);
 }
 
 .footer-inner p {
   margin: 0;
-  color: var(--lux-muted);
+  color: var(--muted-ink);
 }
 
 .footer-actions {
@@ -726,23 +748,23 @@ address {
 
 .social-icon-link {
   display: inline-flex;
-  width: 38px;
-  height: 38px;
+  width: 40px;
+  height: 40px;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(250, 246, 238, 0.16);
+  border: 1px solid rgba(36, 30, 24, 0.16);
   border-radius: 50%;
-  background: rgba(250, 246, 238, 0.06);
-  color: var(--paper);
+  background: rgba(255, 249, 239, 0.78);
+  color: var(--ink);
   text-decoration: none;
   transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease;
 }
 
 .social-icon-link:hover,
 .social-icon-link:focus-visible {
-  border-color: rgba(250, 246, 238, 0.72);
-  background: var(--paper);
-  color: var(--ink);
+  border-color: var(--lux-black);
+  background: var(--lux-black);
+  color: var(--paper);
 }
 
 .social-icon-link svg {
@@ -775,18 +797,18 @@ address {
 .home-hero {
   position: relative;
   overflow: hidden;
-  min-height: clamp(580px, 72vh, 760px);
+  min-height: clamp(500px, 66vh, 680px);
   display: grid;
   align-items: center;
-  padding-block: clamp(74px, 8vw, 118px);
+  padding-block: clamp(72px, 7vw, 104px);
   isolation: isolate;
   perspective: 1200px;
   background:
-    radial-gradient(ellipse at 72% 58%, rgba(250, 246, 238, 0.16), transparent 24rem),
-    radial-gradient(ellipse at 48% 105%, rgba(154, 113, 57, 0.16), transparent 42rem),
-    linear-gradient(180deg, #070605 0%, var(--lux-black) 62%, #0b0907 100%);
-  color: var(--paper);
-  border-bottom: 1px solid rgba(250, 246, 238, 0.12);
+    radial-gradient(ellipse at 72% 54%, rgba(176, 122, 42, 0.13), transparent 28rem),
+    linear-gradient(90deg, rgba(255, 249, 237, 0.99) 0%, rgba(255, 249, 237, 0.96) 48%, rgba(255, 249, 237, 0.7) 100%),
+    var(--paper);
+  color: var(--ink);
+  border-bottom: 1px solid rgba(36, 30, 24, 0.1);
 }
 
 .home-hero::before {
@@ -797,25 +819,26 @@ address {
   z-index: 0;
   width: min(68vw, 980px);
   aspect-ratio: 1 / 0.36;
-  background: radial-gradient(ellipse, rgba(250, 246, 238, 0.16), transparent 68%);
+  background: radial-gradient(ellipse, rgba(36, 30, 24, 0.08), transparent 68%);
   transform: translateX(-8%);
   filter: blur(10px);
-  opacity: 0.85;
+  opacity: 0.55;
   pointer-events: none;
 }
 
 .home-hero::after {
   content: "";
   position: absolute;
-  right: max(-70px, calc((100vw - var(--max-width)) / 2 - 170px));
-  bottom: -18%;
+  right: max(-140px, calc((100vw - var(--max-width)) / 2 - 240px));
+  bottom: -22%;
   z-index: 0;
-  width: min(58vw, 860px);
+  width: min(58vw, 820px);
   aspect-ratio: 1;
   background: url("/assets/img/mandala-cutout.png") center / contain no-repeat;
-  filter: invert(1) grayscale(1) contrast(1.12) brightness(1.24);
-  opacity: 0.48;
-  transform: perspective(1200px) rotateY(-10deg) rotateX(3deg) translate3d(0, 0, 0);
+  filter: grayscale(1) contrast(1.08) brightness(1.04);
+  opacity: 0.28;
+  mix-blend-mode: multiply;
+  transform: perspective(1200px) rotateY(-7deg) rotateX(2deg) translate3d(0, 0, 0);
   transform-origin: 58% center;
   will-change: transform;
   pointer-events: none;
@@ -829,56 +852,57 @@ address {
 
 .home-copy h1 {
   max-width: 650px;
-  color: var(--paper);
-  font-size: clamp(2.35rem, 4vw, 4rem);
-  line-height: 1.04;
+  color: var(--ink);
+  font-size: clamp(2.2rem, 3.35vw, 3.35rem);
+  line-height: 1.08;
 }
 
 .home-copy .lead {
   max-width: 560px;
-  color: rgba(250, 246, 238, 0.72);
-  font-size: 1.05rem;
+  color: rgba(36, 30, 24, 0.72);
+  font-size: 1rem;
 }
 
 .home-copy .eyebrow {
-  color: rgba(213, 216, 201, 0.92);
+  color: var(--antique-gold);
+  text-transform: none;
 }
 
 .home-hero .button {
-  border-color: var(--paper);
-  background: var(--paper);
-  color: var(--ink);
+  border-color: var(--lux-black);
+  background: var(--lux-black);
+  color: var(--paper);
 }
 
 .home-hero .button-secondary {
-  border-color: rgba(250, 246, 238, 0.22);
-  background: rgba(250, 246, 238, 0.05);
-  color: var(--paper);
+  border-color: rgba(36, 30, 24, 0.16);
+  background: rgba(255, 249, 239, 0.64);
+  color: var(--ink);
 }
 
 .home-hero .button:hover,
 .home-hero .button-secondary:hover {
-  border-color: rgba(250, 246, 238, 0.78);
-  background: rgba(250, 246, 238, 0.14);
+  border-color: var(--deep-teal);
+  background: var(--deep-teal);
   color: var(--paper);
 }
 
 .media-preview {
   background:
-    radial-gradient(circle at 20% 15%, rgba(154, 113, 57, 0.12), transparent 22rem),
-    var(--lux-black);
-  color: var(--paper);
-  border-top: 1px solid rgba(250, 246, 238, 0.1);
+    radial-gradient(circle at 20% 15%, rgba(176, 122, 42, 0.1), transparent 22rem),
+    var(--paper);
+  color: var(--ink);
+  border-top: 1px solid rgba(36, 30, 24, 0.08);
 }
 
 .media-preview .text-link,
 .section-tint .text-link {
-  color: var(--paper);
-  text-decoration-color: rgba(250, 246, 238, 0.42);
+  color: var(--deep-teal);
+  text-decoration-color: rgba(40, 78, 82, 0.42);
 }
 
 .media-preview .eyebrow {
-  color: rgba(213, 216, 201, 0.9);
+  color: var(--deep-teal);
 }
 
 .section-tint .book-card .text-link {
@@ -923,14 +947,14 @@ address {
   align-content: end;
   padding: 18px;
   background:
-    linear-gradient(135deg, rgba(46, 42, 39, 0.9), rgba(47, 95, 103, 0.82)),
-    var(--ink);
-  color: var(--paper);
+    radial-gradient(circle at 95% 10%, rgba(176, 122, 42, 0.11), transparent 12rem),
+    rgba(255, 249, 239, 0.86);
+  color: var(--ink);
 }
 
 .media-video span,
 .video-card .card-kicker {
-  color: var(--soft-sage);
+  color: var(--deep-teal);
 }
 
 .media-video strong {
@@ -1088,11 +1112,11 @@ address {
   position: relative;
   overflow: hidden;
   background:
-    radial-gradient(circle at 16% 58%, rgba(250, 246, 238, 0.05), transparent 20rem),
-    radial-gradient(circle at 88% 18%, rgba(40, 87, 94, 0.08), transparent 24rem),
-    linear-gradient(90deg, rgba(20, 16, 13, 0.97), rgba(20, 16, 13, 0.9)),
-    var(--lux-black);
-  color: var(--paper);
+    radial-gradient(circle at 16% 58%, rgba(176, 122, 42, 0.08), transparent 20rem),
+    radial-gradient(circle at 88% 18%, rgba(40, 78, 82, 0.05), transparent 24rem),
+    var(--cream);
+  color: var(--ink);
+  border-block: 1px solid rgba(36, 30, 24, 0.08);
 }
 
 .home-intro::before {
@@ -1106,12 +1130,12 @@ address {
 
 .home-intro .text-stack,
 .home-intro .text-stack p {
-  color: var(--lux-muted);
+  color: var(--muted-ink);
 }
 
 .home-intro .text-link {
-  color: var(--paper);
-  text-decoration-color: rgba(250, 246, 238, 0.48);
+  color: var(--deep-teal);
+  text-decoration-color: rgba(40, 78, 82, 0.42);
 }
 
 .split-rule {
@@ -1125,7 +1149,7 @@ address {
 .page-hero .split-rule,
 .home-intro .split-rule {
   padding-top: 20px;
-  border-top: 1px solid rgba(41, 36, 31, 0.16);
+  border-top: 1px solid rgba(36, 30, 24, 0.12);
 }
 
 .text-stack {
@@ -1229,8 +1253,9 @@ address {
   gap: 12px;
   padding: clamp(30px, 4vw, 46px);
   background:
-    radial-gradient(circle at 80% 20%, rgba(154, 113, 57, 0.18), transparent 14rem),
-    var(--lux-black);
+    radial-gradient(circle at 80% 20%, rgba(176, 122, 42, 0.11), transparent 14rem),
+    rgba(36, 30, 24, 0.035);
+  border-left: 1px solid rgba(36, 30, 24, 0.1);
 }
 
 .visit-card .contact-actions .button {
@@ -1238,15 +1263,15 @@ address {
 }
 
 .visit-card .button-ghost {
-  background: rgba(250, 246, 238, 0.06);
-  border-color: var(--lux-line);
-  color: var(--paper);
+  background: rgba(255, 249, 239, 0.72);
+  border-color: rgba(36, 30, 24, 0.14);
+  color: var(--ink);
 }
 
 .visit-card .button-link {
   border-color: transparent;
-  color: var(--paper);
-  text-decoration-color: rgba(250, 246, 238, 0.5);
+  color: var(--deep-teal);
+  text-decoration-color: rgba(40, 78, 82, 0.42);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -1257,11 +1282,11 @@ address {
 
 @keyframes mandalaDrift {
   from {
-    transform: perspective(1200px) rotateY(-11deg) rotateX(3deg) translate3d(0, 0, 0) scale(1);
+    transform: perspective(1200px) rotateY(-8deg) rotateX(2deg) translate3d(0, 0, 0) scale(1);
   }
 
   to {
-    transform: perspective(1200px) rotateY(-6deg) rotateX(0deg) translate3d(-18px, 10px, 0) scale(1.025);
+    transform: perspective(1200px) rotateY(-3deg) rotateX(0deg) translate3d(-14px, 8px, 0) scale(1.018);
   }
 }
 
@@ -1278,16 +1303,16 @@ address {
 
   .site-nav {
     position: absolute;
-    inset: 66px 16px auto;
+    inset: 74px 16px auto;
     display: none;
     flex-direction: column;
     align-items: stretch;
     padding: 16px;
-    border: 1px solid var(--lux-line);
+    border: 1px solid rgba(36, 30, 24, 0.12);
     border-radius: var(--radius);
-    background: var(--lux-panel);
-    box-shadow: 0 22px 60px rgba(0, 0, 0, 0.24);
-    color: rgba(250, 246, 238, 0.78);
+    background: rgba(255, 249, 239, 0.98);
+    box-shadow: 0 22px 60px rgba(36, 30, 24, 0.18);
+    color: rgba(36, 30, 24, 0.72);
   }
 
   .site-nav.is-open {
@@ -1355,16 +1380,16 @@ address {
   }
 
   .header-inner {
-    min-height: 62px;
+    min-height: 76px;
   }
 
   .site-nav {
-    inset: 62px 12px auto;
+    inset: 84px 12px auto;
   }
 
-  .brand-seal {
-    width: 36px;
-    height: 36px;
+  .brand-logo {
+    width: auto;
+    height: 58px;
   }
 
   .brand-name {
@@ -1393,33 +1418,33 @@ address {
   }
 
   .home-hero {
-    min-height: 660px;
+    min-height: 620px;
     align-items: start;
     padding-block: 66px 54px;
     background:
-      radial-gradient(ellipse at 86% 74%, rgba(250, 246, 238, 0.13), transparent 16rem),
-      radial-gradient(ellipse at 34% 105%, rgba(154, 113, 57, 0.16), transparent 24rem),
-      linear-gradient(180deg, #070605 0%, var(--lux-black) 72%, #0b0907 100%);
+      radial-gradient(ellipse at 86% 74%, rgba(176, 122, 42, 0.12), transparent 16rem),
+      radial-gradient(ellipse at 34% 105%, rgba(40, 78, 82, 0.06), transparent 24rem),
+      var(--paper);
   }
 
   .home-hero::after {
     top: auto;
-    right: -82vw;
-    bottom: -22%;
-    width: 178vw;
-    opacity: 0.26;
+    right: -92vw;
+    bottom: -24%;
+    width: 184vw;
+    opacity: 0.18;
   }
 
   .home-hero::before {
     left: 28%;
     bottom: 2%;
     width: 120vw;
-    opacity: 0.42;
+    opacity: 0.24;
   }
 
   .page-hero h1,
   .home-copy h1 {
-    font-size: 2.35rem;
+    font-size: 2.14rem;
   }
 
   .hero {
@@ -1470,6 +1495,11 @@ address {
   .visit-card > div:first-child,
   .visit-card .contact-actions {
     padding: 24px;
+  }
+
+  .visit-card .contact-actions {
+    border-top: 1px solid rgba(36, 30, 24, 0.1);
+    border-left: 0;
   }
 
   .about-portrait {
