@@ -159,9 +159,12 @@ Secondary phone:
 8979711115
 ```
 
-The studio has moved. The old Maps link has been removed. Until the new address
-and visiting hours are confirmed, the Visit page asks visitors to request the
-current location on WhatsApp. Once confirmed, update both the visible Visit
-page and the PostalAddress records in the homepage and Visit JSON-LD.
+Current address, supplied by the owner:
+
+1/1 Canal Road, Kishanpur #3, Jakhan, Dehradun 248009, Uttarakhand.
+
+The Visit page links to a Google Maps search for that address. The visible
+address, footer, artwork FAQ, and homepage/Visit PostalAddress records are
+updated. Visiting hours still require confirmation by phone or WhatsApp.
 
 See REDESIGN.md for the design direction and the remaining location update.

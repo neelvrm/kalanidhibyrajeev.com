@@ -46,7 +46,7 @@ if (navToggle && nav) {
     if (wasMobileOpen) navToggle.focus();
     else if (wasMoreOpen) more.querySelector("summary").focus();
   });
-  matchMedia("(min-width: 841px)").addEventListener("change", closeNav);
+  matchMedia("(min-width: 1001px)").addEventListener("change", closeNav);
 }
 
 const makePlaceholder = (label, className = "placeholder-art") =>

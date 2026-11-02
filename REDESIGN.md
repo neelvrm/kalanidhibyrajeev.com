@@ -20,7 +20,11 @@ Fourth Cross Labs.
 - Use one shared theme for all eight pages, with consistent buttons and headings.
 - Bundle Lucide 0.468.0 icons locally with their license.
 - Keep catalogue filters selected while data loads; expose aria-pressed state.
-- Keep the former shop address removed; the new address is still unconfirmed.
+- Current address: 1/1 Canal Road, Kishanpur #3, Jakhan, Dehradun 248009.
+  Supplied by the owner in a gallery video poster. Visiting hours remain unconfirmed.
+- Neutral white/slate theme with listmonk's blue accent; the supplied logo retains its gold.
+- Oat supplies native typography and button variants. oat-local.css contains tokens
+  and accessibility helpers, rather than an imitation component layer.
 
 ## References
 
