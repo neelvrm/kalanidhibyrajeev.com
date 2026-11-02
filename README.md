@@ -153,10 +153,9 @@ Secondary phone:
 8979711115
 ```
 
-The map link is intentionally a lightweight outbound Google Maps search:
+The studio has moved. The old Maps link has been removed. Until the new address
+and visiting hours are confirmed, the Visit page asks visitors to request the
+current location on WhatsApp. Once confirmed, update both the visible Visit
+page and the PostalAddress records in the homepage and Visit JSON-LD.
 
-```text
-https://www.google.com/maps/search/?api=1&query=Khairi+Mansingh+New+Sahastradhara+Road+Maldevta+Doonali+Dehradun
-```
-
-No heavy map iframe is embedded by default.
+See REDESIGN.md for the design direction and the remaining location update.
