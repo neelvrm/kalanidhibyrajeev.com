@@ -22,7 +22,9 @@ Fourth Cross Labs.
 - Keep catalogue filters selected while data loads; expose aria-pressed state.
 - Current address: 1/1 Canal Road, Kishanpur #3, Jakhan, Dehradun 248009.
   Supplied by the owner in a gallery video poster. Visiting hours remain unconfirmed.
-- Neutral white/slate theme with listmonk's blue accent; the supplied logo retains its gold.
+- Warm ivory, charcoal, and restrained antique-gold theme, matched to the supplied logo.
+- Lighter serif display typography, concise hero copy, and a numbered collection index.
+- Removed the repeated homepage topics section; book and studio features remain unframed.
 - Oat supplies native typography and button variants. oat-local.css contains tokens
   and accessibility helpers, rather than an imitation component layer.
 

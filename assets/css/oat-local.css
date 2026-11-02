@@ -1,24 +1,24 @@
 /* Oat is the component foundation; local tokens keep the supplied brand assets. */
 :root {
   color-scheme: light;
-  --paper: #FFFFFF;
-  --cream: #F7F8FA;
-  --ink: #182331;
-  --muted-ink: #606B78;
-  --antique-gold: #A2702D;
-  --deep-teal: #0055D4;
-  --border: #DEE3EA;
+  --paper: #FCFBF7;
+  --cream: #F2EFE7;
+  --ink: #252520;
+  --muted-ink: #69685F;
+  --antique-gold: #8D6B32;
+  --deep-teal: #252520;
+  --border: #DDD8CD;
   --body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --display: var(--body);
+  --display: Georgia, "Times New Roman", serif;
   --max-width: 1120px;
   --background: var(--paper);
   --foreground: var(--ink);
-  --primary: #0055D4;
+  --primary: #252520;
   --primary-foreground: #FFFFFF;
-  --secondary: #EFF3F8;
-  --secondary-foreground: #182331;
-  --accent: #EFF3F8;
-  --muted: #F1F4F8;
+  --secondary: #F1EEE6;
+  --secondary-foreground: #252520;
+  --accent: #ECE7DB;
+  --muted: #F2EFE7;
   --muted-foreground: var(--muted-ink);
   --font-sans: var(--body);
   --text-1: 2.25rem;
