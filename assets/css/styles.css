@@ -92,8 +92,8 @@ p + p { margin-top: 14px; }
 .studio-topics h3 { margin-bottom: 10px; }
 .studio-topics p { color: var(--muted-ink); font-size: 15px; }
 .studio-topics a { margin-top: 18px; font-size: 14px; }
-.book-spotlight { display: grid; grid-template-columns: 260px minmax(0,1fr); gap: 64px; align-items: center; max-width: 900px; margin-inline: auto; }
-.book-spotlight > img { width: 190px; max-height: 270px; height: auto; object-fit: contain; justify-self: center; }
+.book-spotlight { display: grid; grid-template-columns: 220px minmax(0,1fr); gap: 48px; align-items: center; }
+.book-spotlight > img { width: 190px; max-height: 270px; height: auto; object-fit: contain; justify-self: start; }
 .book-spotlight h2 { margin-bottom: 16px; font-size: 32px; }
 .book-spotlight p:not(.eyebrow) { color: var(--muted-ink); max-width: 490px; }
 .book-spotlight .text-link { margin-top: 22px; }
