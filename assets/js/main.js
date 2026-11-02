@@ -1,3 +1,5 @@
+document.documentElement.classList.add("js");
+
 const phone = "917302239440";
 const visitMessage = "Namaste, I would like to know more about कलाNidhi by Rajeev Verma.";
 
@@ -19,15 +21,32 @@ document.querySelectorAll("[data-whatsapp-link]").forEach((link) => {
 
 const navToggle = document.querySelector(".nav-toggle");
 const nav = document.querySelector("#site-nav");
+const more = document.querySelector(".nav-more");
+function closeNav() {
+  nav?.classList.remove("is-open");
+  navToggle?.setAttribute("aria-expanded", "false");
+  if (more) more.open = false;
+}
 if (navToggle && nav) {
   navToggle.addEventListener("click", () => {
     const open = nav.classList.toggle("is-open");
     navToggle.setAttribute("aria-expanded", String(open));
   });
-  nav.addEventListener("click", () => {
-    nav.classList.remove("is-open");
-    navToggle.setAttribute("aria-expanded", "false");
+  nav.addEventListener("click", (event) => {
+    if (event.target.closest("a")) closeNav();
   });
+  document.addEventListener("click", (event) => {
+    if (!event.target.closest(".header-inner")) closeNav();
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape") return;
+    const wasMobileOpen = nav.classList.contains("is-open");
+    const wasMoreOpen = more?.open;
+    closeNav();
+    if (wasMobileOpen) navToggle.focus();
+    else if (wasMoreOpen) more.querySelector("summary").focus();
+  });
+  matchMedia("(min-width: 841px)").addEventListener("change", closeNav);
 }
 
 const makePlaceholder = (label, className = "placeholder-art") =>
@@ -99,7 +118,10 @@ async function hydrate() {
       bookGrid ? loadJson("/data/books.json") : Promise.resolve([]),
       workshopGrid ? loadJson("/data/workshops.json") : Promise.resolve([])
     ]);
-    if (artGrid) artGrid.innerHTML = artworks.map(artworkCard).join("");
+    if (artGrid) {
+      artGrid.innerHTML = artworks.map(artworkCard).join("");
+      applyFilter();
+    }
     if (bookGrid) bookGrid.innerHTML = books.map(bookCard).join("");
     if (workshopGrid) workshopGrid.innerHTML = workshops.map(workshopCard).join("");
   } catch (error) {
@@ -107,16 +129,24 @@ async function hydrate() {
   }
 }
 
+function applyFilter() {
+  const selected = document.querySelector("[data-filter].is-active");
+  const filter = selected?.dataset.filter || "all";
+  document.querySelectorAll("[data-filter]").forEach((button) => {
+    button.setAttribute("aria-pressed", String(button === selected));
+  });
+  document.querySelectorAll("#artwork-grid .art-card").forEach((card) => {
+    card.hidden = filter !== "all" && card.dataset.category !== filter;
+  });
+}
 document.querySelectorAll("[data-filter]").forEach((button) => {
   button.addEventListener("click", () => {
-    const filter = button.dataset.filter;
     document.querySelectorAll("[data-filter]").forEach((btn) => btn.classList.remove("is-active"));
     button.classList.add("is-active");
-    document.querySelectorAll("#artwork-grid .art-card").forEach((card) => {
-      card.hidden = filter !== "all" && card.dataset.category !== filter;
-    });
+    applyFilter();
   });
 });
+applyFilter();
 
 const year = document.querySelector("#year");
 if (year) year.textContent = String(new Date().getFullYear());

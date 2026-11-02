@@ -1,7 +1,35 @@
-# Website Design
+# Mandala / Oat Design
 
-The previous warm design and supplied transparent header/footer logos have been restored.
+Implemented on design/mandala-oat-refresh, validated locally before publishing
+through the existing GitHub Pages deployment.
 
-The studio has moved. The former street address, Maps link and opening hours remain removed.
-Instagram public profile access did not reveal the new address. Confirm the new address, Maps pin
-and opening hours with the owner before updating visible contact details and JSON-LD.
+## Direction
+
+Preserve the warm cream palette, supplied transparent logos, and approved
+watermarked mandala hero. Refine navigation, hierarchy, spacing, and page rhythm
+using Oat's semantic foundation and the restrained layouts of listmonk and
+Fourth Cross Labs.
+
+## Implementation
+
+- Bundle Oat 1.1.0 CSS locally with its MIT license; no build or CDN requirement.
+- Use native details/summary for the More menu, plus keyboard and click handling.
+- Keep mobile navigation available when JavaScript is disabled.
+- Retain header logos at 192 x 48 desktop and 168 x 42 mobile.
+- Keep original art on /art/ and use concise links from the homepage.
+- Use one shared theme for all eight pages, with consistent buttons and headings.
+- Bundle Lucide 0.468.0 icons locally with their license.
+- Keep catalogue filters selected while data loads; expose aria-pressed state.
+- Keep the former shop address removed; the new address is still unconfirmed.
+
+## References
+
+- https://oat.ink/usage/
+- https://oat.ink/customizing/
+- https://listmonk.app/
+- https://fourthcross.tech/
+
+## Preview
+
+Run python3 -m http.server 4181 from the project root.
+Open http://127.0.0.1:4181/ to review the design before publishing.

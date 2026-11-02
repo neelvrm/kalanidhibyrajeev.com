@@ -1,8 +1,13 @@
-# कलाnidhi by Rajeev Verma
+# कलाNidhi by Rajeev Verma
 
 Static MVP website for `kalanidhibyrajeev.com`.
 
 The site is plain HTML, CSS, SVG, JSON, and minimal vanilla JavaScript. There is no framework, build step, package install, or deploy dependency.
+
+Oat 1.1.0 CSS is bundled in `assets/vendor/oat/`, with theme overrides in
+`assets/css/styles.css`. Navigation uses native HTML and the existing vanilla
+JavaScript. Lucide 0.468.0 icons are bundled in `assets/icons/`. Both include
+their licenses and require no external requests at runtime.
 
 ## Site Routes
 
@@ -13,6 +18,7 @@ The website is now structured as a small static site:
 /about/
 /art/
 /books/
+/media/
 /workshops/
 /daily-specials/
 /visit/
