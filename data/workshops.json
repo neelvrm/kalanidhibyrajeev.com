@@ -2,49 +2,49 @@
   {
     "title": "Morning Laughter Therapy",
     "duration": "Morning sessions",
-    "for": "Adults, seniors, families, and anyone starting the day lightly",
-    "learn": "Guided laughter, breathing, easy movement, and a calmer start to the day."
+    "for": "Adults, seniors and families",
+    "learn": "Guided laughter, breathing and gentle movement."
   },
   {
     "title": "Beginner Mandala Workshop",
     "duration": "2 hours",
-    "for": "Beginners, hobbyists, and mindful makers",
-    "learn": "Basic grids, symmetry, pattern rhythm, and finishing."
+    "for": "Beginners and adults interested in mandala drawing",
+    "learn": "Drawing grids, symmetry, repeating patterns and finishing a mandala."
   },
   {
     "title": "Dot Mandala on Plate",
     "duration": "2.5 hours",
-    "for": "Adults, teenagers, and craft lovers",
+    "for": "Adults and teenagers",
     "learn": "Dotting tools, colour balance, plate preparation, and sealing."
   },
   {
     "title": "Oil Painting Basics",
     "duration": "3 hours",
-    "for": "New painters and returning learners",
+    "for": "Beginners and adults returning to painting",
     "learn": "Materials, layering, brush control, and simple composition."
   },
   {
     "title": "Portrait Study",
     "duration": "3 hours",
-    "for": "Students and observational drawing learners",
-    "learn": "Facial proportions, expression, light, and sketch discipline."
+    "for": "Students and adults interested in portrait drawing",
+    "learn": "Facial proportions, expression, light and sketching techniques."
   },
   {
     "title": "Spiritual Art Session",
     "duration": "2 hours",
-    "for": "Seekers, artists, and reflective groups",
-    "learn": "Symbol, form, meditative drawing, and personal visual language."
+    "for": "Adults interested in spiritual art",
+    "learn": "Working with symbols, shapes and spiritual themes in drawing."
   },
   {
     "title": "Art for Healing",
     "duration": "90 minutes",
     "for": "Individuals and small groups",
-    "learn": "Gentle creative prompts, reflection, and expressive art practice."
+    "learn": "Drawing, colour and guided creative exercises for self-expression."
   },
   {
     "title": "Kids Creative Sunday",
     "duration": "90 minutes",
     "for": "Children and families",
-    "learn": "Playful drawing, colour, craft basics, and confidence."
+    "learn": "Drawing, colour and basic crafts."
   }
 ]

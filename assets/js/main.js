@@ -70,7 +70,7 @@ function artworkCard(item) {
       <h3>${item.title}</h3>
       <p>${item.medium}</p>
       <p class="status">${item.status}</p>
-      <a class="text-link" href="${wa(message)}">Enquire on WhatsApp</a>
+      <a class="text-link" href="${wa(message)}">Check availability</a>
     </div>
   </article>`;
 }
@@ -82,10 +82,10 @@ function bookCard(item) {
     <div class="card-body">
       <p class="card-kicker">${item.subtitle}</p>
       <h3>${item.title}</h3>
-      <p>${item.description}</p>
+      <p>by ${item.author}</p>
       <div class="split-links">
         <a class="text-link" href="${item.link}">${item.link === "#" ? "Ask for details" : "View on Amazon"}</a>
-        <a class="text-link" href="${wa(signed)}">Ask for signed copy</a>
+        <a class="text-link" href="${wa(signed)}">Ask about a signed copy</a>
       </div>
     </div>
   </article>`;
@@ -96,9 +96,9 @@ function workshopCard(item) {
   return `<article class="workshop-card">
     <p class="card-kicker">${item.duration}</p>
     <h3>${item.title}</h3>
-    <p><strong>For:</strong> ${item.for}</p>
-    <p><strong>Learn:</strong> ${item.learn}</p>
-    <a class="text-link" href="${wa(message)}">Register Interest on WhatsApp</a>
+    <p><strong>Suitable for:</strong> ${item.for}</p>
+    <p><strong>Session covers:</strong> ${item.learn}</p>
+    <a class="text-link" href="${wa(message)}">Ask about dates &amp; fees</a>
   </article>`;
 }
 
@@ -114,9 +114,9 @@ async function hydrate() {
     const bookGrid = document.querySelector("#book-grid");
     const workshopGrid = document.querySelector("#workshop-grid");
     const [artworks, books, workshops] = await Promise.all([
-      artGrid ? loadJson("/data/artworks.json") : Promise.resolve([]),
-      bookGrid ? loadJson("/data/books.json") : Promise.resolve([]),
-      workshopGrid ? loadJson("/data/workshops.json") : Promise.resolve([])
+      artGrid ? loadJson("/data/artworks.json?v=copy-1") : Promise.resolve([]),
+      bookGrid ? loadJson("/data/books.json?v=copy-1") : Promise.resolve([]),
+      workshopGrid ? loadJson("/data/workshops.json?v=copy-1") : Promise.resolve([])
     ]);
     if (artGrid) {
       artGrid.innerHTML = artworks.map(artworkCard).join("");
